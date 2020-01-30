@@ -10,7 +10,7 @@
     }, className]"
     @mousedown="elementDown"
     @touchstart="elementTouchDown"
-  >
+  ><div class="maincontainer">
     <div
       v-for="handle in actualHandles"
       :key="handle"
@@ -22,7 +22,7 @@
       <slot :name="handle"></slot>
     </div>
     <slot></slot>
-  </div>
+  </div></div>
 </template>
 
 <script>
